@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      What's New
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="welcome-card" *ngFor="let movie of now_playing_movies">
+    <ion-img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2{{movie.poster_path}}"></ion-img>
+    <ion-card-header>
+      <ion-card-subtitle>{{ movie.release_date }}</ion-card-subtitle>
+      <ion-card-title>{{ movie.original_title }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{ movie.overview }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
