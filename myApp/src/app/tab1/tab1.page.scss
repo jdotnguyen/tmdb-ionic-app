@@ -1,4 +1,10 @@
-.welcome-card ion-img {
-  max-height: 35vh;
-  overflow: hidden;
+.welcome-card {
+  width:40%;
+  display:inline-block;
+  max-height:30vh;
+
+  ion-img {
+    max-height: 35vh;
+    overflow: hidden;
+  }
 }
